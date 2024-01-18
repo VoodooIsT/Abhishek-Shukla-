@@ -41,7 +41,9 @@ const Navbar = () => {
         <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
 
-      <Logo />
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+        <Logo />
+      </div>
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
