@@ -5,7 +5,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import Project1 from "../../public/images/projects/StudyNotion.png";
+import Project2 from "../../public/images/projects/SmartEstate.png";
+import Project3 from "../../public/images/projects/NetflixGPT.png";
+import Project4 from "../../public/images/projects/Weather app.png";
+import Project5 from "../../public/images/projects/Inventory.png";
 
 const Featuredproject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -104,12 +108,56 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <Featuredproject
-                title="Crypto Screener Application"
+                title="StudyNotion"
                 img={Project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency"
-                link="/"
+                summary="StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational
+                content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and Express.JS.
+                Frameworks, Libraries, and Tools used: Node.js, express.js, MongoDB, JWT, Bcryptjs, Tailwind CSS and mongoose.
+                A user can signup in 2 ways as an Instructor and as a Student an student can buy course and keep track of his/her
+                progress and instructor can track of which course is trending along with available orders and graph for revenue."
+                link="https://study2notion.vercel.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/VoodooIsT/Study-notion"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="SmartEstate"
+                img={Project2}
+                summary="Developed a hotel reservation website along with hotel management tools, using MERN Stack. Tools used: MongoDB, Express, Nodejs, React, HTML, CSS and Tailwindcss .Designed different collections in databases like real time availability and pricing information along with CRUD functionalities allowing users to easily search and filter for hotels using different functionalities. Implemented features such as viewing hotel information including pictures, amenities and the option to add special request or notes."
+                link="https://estate.100jsprojects.com/"
+                type="Featured Project"
+                github="https://github.com/VoodooIsT/SmartEstate"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="NetflixGPT"
+                img={Project3}
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency"
+                link="https://netflixgpt-df0c9.web.app/"
+                type="Featured Project"
+                github="https://github.com/VoodooIsT/NetflixGPT"
+              />
+            </div>
+            <div className="col-span-12">
+              <Featuredproject
+                title="Stock Merch"
+                img={Project5}
+                summary="It is a software where an organization can manage their product stock, customers, suppliers, orders and view different statistics of the inventory. Also an individual employee of that organization can work here for the organization."
+                link="https://stockmerch.vercel.app/login"
+                type="Featured Project"
+                github="https://github.com/VoodooIsT/inventory-managenment"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Weather App"
+                img={Project4}
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency"
+                link="https://weather-app-voodooist.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/VoodooIsT/weather-app"
               />
             </div>
             <div className="col-span-6">
@@ -122,10 +170,6 @@ const projects = () => {
                 github="/"
               />
             </div>
-            <div className="col-span-6">Project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
           </div>
         </Layout>
       </main>
